@@ -1,0 +1,109 @@
+@import "variabels";
+@import "mixins";
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  max-width: 1120px;
+  height: 100vh;
+  
+}
+/****header****/
+// main{
+  
+//   margin: 0 auto;
+// }
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 60px 120px;
+  ion-icon{
+    font-size: 60px;
+    color: $apple;
+  }
+  input{
+    padding: 20px;
+    font-size: 16px;
+    background: $buyNow;
+    border-radius: 20px;
+    border: 1px solid $buyNow;
+    color: $white;
+    
+  }
+}
+/****Body****/
+section{
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+//arcicle left
+.leftSection{
+  display: flex;
+  flex-direction: column;
+  
+  h1{
+    font-size: 32px;
+    font-weight: 900;
+  }
+  
+  ion-icon{
+    color:$yellow;
+    font-size:24px;
+    margin-top: 10px;
+  }
+  .informationPhone{
+    margin-top: 20px;
+    max-width: 600px;
+    line-height: 1.4em;
+  }
+  .informationPrice{
+    margin: 20px 0 ;
+    background: $price;
+    color: $white;
+    font-size: 25px;
+    max-width: 150px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    span{
+      font-size: 16px;
+    }
+  }
+  button{
+    padding: 10px 20px;
+    max-width: 150px;
+    background: $buy;
+    border: $buy;
+    border-radius: 10px;
+    color: $white;
+  }
+}
+
+//aside right
+.imgBox{
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  img{
+    max-width: 340px;
+  }
+}
+.phoneImg{
+  display: flex;
+  align-items: center;
+  li{
+    list-style: none;
+    img{
+      max-width: 50px;
+    }
+  }
+}
+
+/*   responzivita    */
+@media (max-width:350px) {
+  
+}

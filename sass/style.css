@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  max-width: 1120px;
+  height: 100vh;
+}
+
+/****header****/
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin: 60px 120px;
+}
+
+header ion-icon {
+  font-size: 60px;
+  color: #979797;
+}
+
+header input {
+  padding: 20px;
+  font-size: 16px;
+  background: #2997FF;
+  border-radius: 20px;
+  border: 1px solid #2997FF;
+  color: #fff;
+}
+
+/****Body****/
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+.leftSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.leftSection h1 {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.leftSection ion-icon {
+  color: #FFD538;
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.leftSection .informationPhone {
+  margin-top: 20px;
+  max-width: 600px;
+  line-height: 1.4em;
+}
+
+.leftSection .informationPrice {
+  margin: 20px 0;
+  background: #C91F28;
+  color: #fff;
+  font-size: 25px;
+  max-width: 150px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.leftSection .informationPrice span {
+  font-size: 16px;
+}
+
+.leftSection button {
+  padding: 10px 20px;
+  max-width: 150px;
+  background: #21AA1E;
+  border: #21AA1E;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.imgBox {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 250px;
+}
+
+.imgBox img {
+  max-width: 340px;
+}
+
+.phoneImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.phoneImg li {
+  list-style: none;
+}
+
+.phoneImg li img {
+  max-width: 50px;
+}
+
+/*   responzivita    */
+/*# sourceMappingURL=style.css.map */
