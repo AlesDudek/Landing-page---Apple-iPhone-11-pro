@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Corinthia&family=Inter&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,6 +9,8 @@
 body {
   max-width: 1120px;
   height: 100vh;
+  margin: 0 auto;
+  font-family: 'Inter'sans-serif;
 }
 
 /****header****/
@@ -21,20 +24,17 @@ header {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  margin: 60px 120px;
-}
-
-header ion-icon {
-  font-size: 60px;
-  color: #979797;
+  margin-top: 67px;
 }
 
 header input {
-  padding: 20px;
-  font-size: 16px;
+  width: 190px;
+  height: 46px;
+  border: #2997FF;
+  border-radius: 8px;
   background: #2997FF;
-  border-radius: 20px;
-  border: 1px solid #2997FF;
+  font-size: 16px;
+  font-weight: bold;
   color: #fff;
 }
 
@@ -43,13 +43,54 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-top: 76px;
 }
 
-.leftSection {
+.leftSection h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.leftSection .star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 16px;
+}
+
+.leftSection .star .imgLeft {
+  margin-left: 8px;
+}
+
+.leftSection .star p {
+  margin-left: 12px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.leftSection .star p span {
+  margin-left: 4px;
+  color: #A8A8A8;
+  font-weight: 100;
+}
+
+.leftSection .informationPhone {
+  margin-top: 33px;
+  font-size: 16px;
+  max-width: 600px;
+  line-height: 25px;
+}
+
+.leftSection .informationPrice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,78 +98,118 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-.leftSection h1 {
-  font-size: 32px;
-  font-weight: 900;
-}
-
-.leftSection ion-icon {
-  color: #FFD538;
-  font-size: 24px;
-  margin-top: 10px;
-}
-
-.leftSection .informationPhone {
-  margin-top: 20px;
-  max-width: 600px;
-  line-height: 1.4em;
-}
-
-.leftSection .informationPrice {
-  margin: 20px 0;
-  background: #C91F28;
-  color: #fff;
-  font-size: 25px;
-  max-width: 150px;
-  padding: 10px 20px;
-  border-radius: 10px;
-}
-
-.leftSection .informationPrice span {
-  font-size: 16px;
-}
-
-.leftSection button {
-  padding: 10px 20px;
-  max-width: 150px;
-  background: #21AA1E;
-  border: #21AA1E;
-  border-radius: 10px;
-  color: #fff;
-}
-
-.imgBox {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 250px;
+  margin-top: 28px;
+  width: 180px;
+  height: 100px;
+  background: #C91F28;
+  border-radius: 12px;
+  font-size: 26px;
+  color: #fff;
 }
 
-.imgBox img {
-  max-width: 340px;
+.leftSection .informationPrice span {
+  font-size: 16px;
 }
 
-.phoneImg {
+.leftSection .dph {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 16px;
+  margin-top: 8px;
+  width: 180px;
+  color: #A8A8A8;
 }
 
-.phoneImg li {
+.leftSection button {
+  width: 190px;
+  height: 46px;
+  margin-top: 36px;
+  background: #21AA1E;
+  color: #fff;
+  font-size: 16px;
+  border: #21AA1E;
+  border-radius: 8px;
+}
+
+aside .phoneImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   list-style: none;
+  margin-top: 34px;
 }
 
-.phoneImg li img {
-  max-width: 50px;
+aside .phoneImg .images {
+  width: 100px;
+  height: 100px;
+  border: red;
 }
 
 /*   responzivita    */
+@media (max-width: 660px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section .leftSection h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  section .leftSection .star {
+    margin-top: 8px;
+  }
+  section .leftSection .informationPhone {
+    margin-top: 16px;
+    max-width: 345px;
+  }
+  section .leftSection .boxInformationPrice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section .leftSection .boxInformationPrice .informationPrice {
+    margin-top: 26px;
+    height: 124px;
+  }
+  section aside {
+    margin-top: 48px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

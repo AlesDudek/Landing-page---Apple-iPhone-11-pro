@@ -1,6 +1,6 @@
 @import "variabels";
 @import "mixins";
-
+@import url('https://fonts.googleapis.com/css2?family=Corinthia&family=Inter&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -9,101 +9,154 @@
 body{
   max-width: 1120px;
   height: 100vh;
-  
+  margin: 0 auto;
+  font-family: 'Inter'sans-serif;
 }
 /****header****/
-// main{
-  
-//   margin: 0 auto;
-// }
 header{
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  margin: 60px 120px;
-  ion-icon{
-    font-size: 60px;
-    color: $apple;
-  }
+ margin-top: 67px;
   input{
-    padding: 20px;
-    font-size: 16px;
+    width: 190px;
+    height: 46px;
+    border: #2997FF;
+    border-radius: 8px;
     background: $buyNow;
-    border-radius: 20px;
-    border: 1px solid $buyNow;
-    color: $white;
-    
-  }
-}
-/****Body****/
-section{
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-}
-//arcicle left
-.leftSection{
-  display: flex;
-  flex-direction: column;
-  
-  h1{
-    font-size: 32px;
-    font-weight: 900;
-  }
-  
-  ion-icon{
-    color:$yellow;
-    font-size:24px;
-    margin-top: 10px;
-  }
-  .informationPhone{
-    margin-top: 20px;
-    max-width: 600px;
-    line-height: 1.4em;
-  }
-  .informationPrice{
-    margin: 20px 0 ;
-    background: $price;
-    color: $white;
-    font-size: 25px;
-    max-width: 150px;
-    padding: 10px 20px;
-    border-radius: 10px;
-    span{
-      font-size: 16px;
-    }
-  }
-  button{
-    padding: 10px 20px;
-    max-width: 150px;
-    background: $buy;
-    border: $buy;
-    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
     color: $white;
   }
 }
 
-//aside right
-.imgBox{
-  justify-content: center;
-  align-items: center;
-  width: 250px;
-  img{
-    max-width: 340px;
+/****Body****/
+section{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  margin-top: 76px;
+}
+//arcicle left
+.leftSection{
+  h1{
+    font-size: 32px;
+    font-weight: bold;
+    
+  }
+  .star{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    .imgLeft{
+      margin-left: 8px;
+    }
+    p{
+      margin-left: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      span{
+        margin-left: 4px;
+        color: $grey;
+        font-weight: 100;
+      }
+    }
+  }
+  .informationPhone{
+    margin-top: 33px;
+    font-size: 16px;
+    max-width: 600px;
+    line-height: 25px;
+
+  }
+  .informationPrice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28px;
+    width: 180px;
+    height: 100px;
+    background: $price;
+    border-radius: 12px;
+    font-size: 26px;
+    color: $white;
+    span{
+      font-size: 16px;
+    }
+  }
+  .dph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 8px;
+    width: 180px;
+    color: $grey;
+  }
+  button{
+    width: 190px;
+    height: 46px;
+    margin-top: 36px;
+    background: $buy;
+    color: $white;
+    font-size: 16px;
+    border: $buy;
+    border-radius: 8px;
   }
 }
-.phoneImg{
-  display: flex;
-  align-items: center;
-  li{
+
+//aside right
+aside{
+  .phoneImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     list-style: none;
-    img{
-      max-width: 50px;
+    margin-top: 34px;
+    .images{
+      width: 100px;
+      height: 100px;
+      border: red;
     }
   }
 }
 
 /*   responzivita    */
-@media (max-width:350px) {
-  
+@media (max-width:660px) {
+  section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .leftSection{
+      h1{
+        font-size: 24px;
+        font-weight: bold;
+      }
+      .star{
+        margin-top: 8px;
+      }
+      .informationPhone{
+        margin-top: 16px;
+        max-width: 345px;
+      }
+      .boxInformationPrice{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .informationPrice{
+          margin-top: 26px;
+          height: 124px;
+        }
+      }
+    }
+    aside{
+      margin-top: 48px;
+      .phoneImg{
+
+      }
+    }
+  }
 }
